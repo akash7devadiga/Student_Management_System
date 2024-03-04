@@ -2,7 +2,7 @@ import {useState, useEffect, useRef} from "react";
 import {getAuth, signInWithEmailAndPassword} from "firebase/auth";
 import {useNavigate, Link} from "react-router-dom";
 
-
+import "./style.scss";
 
 
 export default function Login()
@@ -42,6 +42,8 @@ export default function Login()
 	return(
 		<>
 			
+					<div className = "formContainer">
+					<div className = "formWrapper">
 					<span className = "title">Log in</span><br/>
 						<form onSubmit = {login}>
 							<input type = "email" placeholder = "Enter your email" value = {email} onChange = {hEmail} ref = {rEmail}  />
@@ -54,6 +56,8 @@ export default function Login()
 							<div className = "login-nav-link">
 								<p><Link to = "/fp">Forgot your password?</Link></p>
 							</div>
+					</div>
+				</div>
 				
 		</>
 	);

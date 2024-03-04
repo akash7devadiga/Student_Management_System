@@ -1,0 +1,47 @@
+.formContain
+{
+  background-color: #1c768f;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .formWrap{
+    background-color: white;
+    padding: 10px 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    .title{
+      color: #5d5b5d;
+      font-weight: bold;
+      font-size: 24px;
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      input{
+        padding: 15px;
+        border: none;
+        border-bottom: 1px solid #a7bcff;
+        color: #1c768f;
+      }
+      .wrapper-class input[type="radio"]{
+        width: 15px;
+      }
+      
+      button{
+        background-color: #1c768f;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
